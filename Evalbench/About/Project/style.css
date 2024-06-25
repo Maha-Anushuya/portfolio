@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 70px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-image: url('assests/987.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #9ec9f1;
+  padding: 2px 2px 2px 50px;
+  z-index: 99;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-items {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  align-items: center;
+}
+
+.cta1 {
+  padding: 10px 20px;
+  background-color: #bdaef5;
+  color: #3c319b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta1:hover {
+  background-color: #9521b8;
+}
+
+.cta2 {
+  padding: 15px 25px;
+  background-color: #aeb3f5;
+  color: #3c319b;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cta2:hover {
+  background-color: #9521b8;
+}
+
+.cta3 {
+  margin-left: 40px;
+  padding: 15px 25px;
+  background-color: #b8b7ff;
+  color: #3c319b;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cta3:hover {
+  background-color: #9521b8;
+}
+
+.Project {
+  color: #f8f5f5;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 100rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-evenly;
+  line-height: 2rem;
+  text-align: justify;
+  align-items: center;
+}
+
+.snake {
+  height: 200px;
+  width: 200px;
+  float: right;
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 20px;
+  }
+
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-items {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .Project {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+      margin: 0;
+  }
+
+  header {
+      padding: 1rem;
+  }
+
+  .Project {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .snake {
+      float: none;
+      display: block;
+      margin: 0 auto 15px auto;
+  }
+}

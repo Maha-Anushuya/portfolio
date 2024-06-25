@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 70px;
+  margin: 10px;
+  background-image: url('assests/980.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #a3cbf0;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-items {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-items li {
+  margin-left: 1rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #532785;
+}
+
+.cta1 {
+  padding: 10px 20px;
+  background-color: #f5aed1;
+  color: #3c319b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta1:hover {
+  background-color: #9521b8;
+}
+
+.search-box {
+  margin-left: 150px;
+  margin-top: 70px; /* Reduced margin-top to move content up */
+  display: flex;
+  align-items: center;
+  color: #080808;
+  margin-bottom: 20px;
+}
+
+.search-box img {
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.search-box input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px; 
+  position: relative;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 70px; 
+  max-width: 600px;
+  z-index: 2; 
+}
+
+.profile h1 {
+  color: #fcfafa;
+  font-size: 50px;
+}
+
+.profile h3 {
+  color: #f8f5f5;
+  font-size: 35px;
+}
+
+.profile h5 {
+  color: #fcfbfb;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.cta2 {
+  margin-bottom: 100px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f5aed1;
+  color: #3c319b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta2:hover {
+  background-color: #9521b8;
+}
+
+.butter {
+  margin-top: 150px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  height: 450px;
+  width: 410px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .search-box {
+    margin-left: 0;
+    margin-top: 20px; 
+    justify-content: center;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 50px; 
+  }
+
+  .profile {
+    margin-top: 20px;
+  }
+
+  .profile h1 {
+    font-size: 40px;
+  }
+
+  .profile h3 {
+    font-size: 25px;
+  }
+
+  .profile h5 {
+    font-size: 15px;
+  }
+
+  .cta2 {
+    padding: 8px 15px;
+    margin: 5px;
+  }
+
+  .butter {
+    margin-top: 150px;
+    height: 200px;
+    width: 160px;
+    top: 10%;
+    right: 5%;
+    margin: 20px auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    margin: 0;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  .nav-items {
+    gap: 10px;
+  }
+
+  .profile h1 {
+    font-size: 30px;
+  }
+
+  .profile h3 {
+    font-size: 25px;
+  }
+
+  .profile h5 {
+    font-size: 15px;
+  }
+
+  .cta2 {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+
+  .butter {
+    margin-top: 190px;
+    height: 250px;
+    width: 120px;
+    top: 20%;
+    right: 5%;
+    margin: 20px auto; 
+  }
+}
+
+.contact {
+  color: #f5f6fa;  
+}
+
+.footer {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  color: #0a0a0a;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #080808;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+  color: #060b10dc;
+}
+
+.github,
+.linkedin,
+.gmail {
+  margin-top: 1px;
+  width: 30px;
+  height: 25px;
+  fill: currentColor;
+  display: inline-block;
+}

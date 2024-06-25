@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  margin: 50px;
+  /* background-color: #e4d6dd; */
+  background-image: url('assests/987.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #9799f7;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-items {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-items li {
+  margin-left: 1rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #532785;
+}
+
+.cta1 {
+  padding: 10px 20px;
+  background-color: #fac9e1;
+  color: #3c319b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta1:hover {
+  background-color: #9521b8;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-container {
+  color: #fdfafa;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.About {
+  color: #fdfbfb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.content {
+  flex: 1 1 700px;
+  max-width: 900px;
+  padding: 5px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.About p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 300px;
+}
+
+.image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-items {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .About {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+      margin: 0;
+  }
+
+  .nav-items {
+      align-items: flex-start;
+  }
+
+  .About {
+      margin: 10px 0;
+      padding: 10px;
+  }
+
+  .hero h2 {
+      font-size: 1.5rem;
+  }
+
+  .hero p {
+      font-size: 0.9rem;
+  }
+}
